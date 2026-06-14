@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <title>Опитування</title>
+  </head>
+
+  <body class="poll-page">
+    <div class="container poll-page__header">
+      <header class="header">
+        <a href="index.html" class="logo">
+          <img src="images/logo.png" alt="Логотип" class="logo__img" />
+        </a>
+        <button class="header__btn">
+          <span class="header__btn-span"></span
+          ><span class="header__btn-span"></span
+          ><span class="header__btn-span"></span>
+        </button>
+        <ul class="menu">
+          <li class="menu__item">
+            <a href="./index.html#home" class="menu__link">Головна</a>
+          </li>
+          <li class="menu__item">
+            <a href="./profile.html" class="menu__link">Моя сторінка</a>
+          </li>
+          <li class="menu__item">
+            <a href="./index.html#about" class="menu__link">Про нас</a>
+          </li>
+          <li class="menu__item">
+            <a href="./index.html#activity" class="menu__link">Заходи</a>
+          </li>
+          <li class="menu__item">
+            <a href="./index.html#news" class="menu__link">Новини</a>
+          </li>
+        </ul>
+      </header>
+    </div>
+
+    <div class="container poll-page__content">
+      <div class="poll">
+        <h1 class="poll__title">Опитування</h1>
+        <div class="poll__inner">
+
+          <ul class="poll__bar">
+            <li class="poll__span"></li>
+            <li class="poll__span"></li>
+            <li class="poll__span"></li>
+            <li class="poll__span"></li>
+            <li class="poll__span"></li>
+            <li class="poll__span"></li>
+          </ul>
+
+          <!-- Q1 -->
+          <div class="poll__step" data-step="1">
+            <span class="poll__subtitle">Запитання №1</span>
+            <h2 class="poll__question">Як до Вас звертатися?</h2>
+            <input type="text" id="q1" class="poll__input" placeholder="Введіть ім'я" />
+          </div>
+
+          <!-- Q2 -->
+          <div class="poll__step" data-step="2">
+            <span class="poll__subtitle">Запитання №2</span>
+            <h2 class="poll__question">Ваш номер телефону</h2>
+            <input type="tel" id="q2" class="poll__input" placeholder="+380 (__) ___-__-__" />
+          </div>
+
+          <!-- Q3 -->
+          <div class="poll__step" data-step="3">
+            <span class="poll__subtitle">Запитання №3</span>
+            <h2 class="poll__question">Ви проживаєте у Вінниці?</h2>
+            <div class="poll__options">
+              <label class="poll__option">
+                <input type="radio" class="poll__radio" name="q3" value="yes" />
+                <span class="poll__radio-custom"></span>
+                <span class="poll__option-text">Так</span>
+              </label>
+              <label class="poll__option">
+                <input type="radio" class="poll__radio" name="q3" value="no" />
+                <span class="poll__radio-custom"></span>
+                <span class="poll__option-text">Ні</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Q4 -->
+          <div class="poll__step" data-step="4">
+            <span class="poll__subtitle">Запитання №4</span>
+            <h2 class="poll__question">Надаєте перевагу якій роботі?</h2>
+            <div class="poll__options">
+              <label class="poll__option">
+                <input type="radio" class="poll__radio" name="q4" value="team" />
+                <span class="poll__radio-custom"></span>
+                <span class="poll__option-text">В команді</span>
+              </label>
+              <label class="poll__option">
+                <input type="radio" class="poll__radio" name="q4" value="solo" />
+                <span class="poll__radio-custom"></span>
+                <span class="poll__option-text">Наодинці</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Q5 -->
+          <div class="poll__step" data-step="5">
+            <span class="poll__subtitle">Запитання №5</span>
+            <h2 class="poll__question">Активність чи спокій?</h2>
+            <div class="poll__options">
+              <label class="poll__option">
+                <input type="radio" class="poll__radio" name="q5" value="yes" />
+                <span class="poll__radio-custom"></span>
+                <span class="poll__option-text">Активність</span>
+              </label>
+              <label class="poll__option">
+                <input type="radio" class="poll__radio" name="q5" value="no" />
+                <span class="poll__radio-custom"></span>
+                <span class="poll__option-text">Спокій</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Q6 -->
+          <div class="poll__step" data-step="6">
+            <span class="poll__subtitle">Запитання №6</span>
+            <h2 class="poll__question">Чи зіштовхувалися ви із проблемами зі сном чи тривогою?</h2>
+            <div class="poll__options">
+              <label class="poll__option">
+                <input type="radio" class="poll__radio" name="q6" value="yes" />
+                <span class="poll__radio-custom"></span>
+                <span class="poll__option-text">Так</span>
+              </label>
+              <label class="poll__option">
+                <input type="radio" class="poll__radio" name="q6" value="no" />
+                <span class="poll__radio-custom"></span>
+                <span class="poll__option-text">Ні</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Q7 -->
+          <div class="poll__step" data-step="7">
+            <span class="poll__subtitle">Запитання №7</span>
+            <h2 class="poll__question">Чи турбує вас гучний звук?</h2>
+            <div class="poll__options">
+              <label class="poll__option">
+                <input type="radio" class="poll__radio" name="q7" value="yes" />
+                <span class="poll__radio-custom"></span>
+                <span class="poll__option-text">Так</span>
+              </label>
+              <label class="poll__option">
+                <input type="radio" class="poll__radio" name="q7" value="no" />
+                <span class="poll__radio-custom"></span>
+                <span class="poll__option-text">Ні</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Q8 -->
+          <div class="poll__step" data-step="8">
+            <span class="poll__subtitle">Запитання №8</span>
+            <h2 class="poll__question">Чи є у вас алергія на шерсть, цвітіння?</h2>
+            <div class="poll__options">
+              <label class="poll__option">
+                <input type="radio" class="poll__radio" name="q8" value="yes" />
+                <span class="poll__radio-custom"></span>
+                <span class="poll__option-text">Так</span>
+              </label>
+              <label class="poll__option">
+                <input type="radio" class="poll__radio" name="q8" value="no" />
+                <span class="poll__radio-custom"></span>
+                <span class="poll__option-text">Ні</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Q9 -->
+          <div class="poll__step" data-step="9">
+            <span class="poll__subtitle">Запитання №9</span>
+            <h2 class="poll__question">Чи хотіли б спробувати себе в ролі організатора або наставника?</h2>
+            <div class="poll__options">
+              <label class="poll__option">
+                <input type="radio" class="poll__radio" name="q9" value="yes" />
+                <span class="poll__radio-custom"></span>
+                <span class="poll__option-text">Так</span>
+              </label>
+              <label class="poll__option">
+                <input type="radio" class="poll__radio" name="q9" value="no" />
+                <span class="poll__radio-custom"></span>
+                <span class="poll__option-text">Ні</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Q10 -->
+          <div class="poll__step" data-step="10">
+            <span class="poll__subtitle">Запитання №10</span>
+            <h2 class="poll__question">До якої вікової категорії ви входите?</h2>
+            <div class="poll__options">
+              <label class="poll__option">
+                <input type="radio" class="poll__radio" name="q10" value="under30" />
+                <span class="poll__radio-custom"></span>
+                <span class="poll__option-text">До 30</span>
+              </label>
+              <label class="poll__option">
+                <input type="radio" class="poll__radio" name="q10" value="over30" />
+                <span class="poll__radio-custom"></span>
+                <span class="poll__option-text">Після 30</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Q11 -->
+          <div class="poll__step" data-step="11">
+            <span class="poll__subtitle">Запитання №11</span>
+            <h2 class="poll__question">Чи займалися ви спортом у минулому?</h2>
+            <div class="poll__options">
+              <label class="poll__option">
+                <input type="radio" class="poll__radio" name="q11" value="yes" />
+                <span class="poll__radio-custom"></span>
+                <span class="poll__option-text">Так</span>
+              </label>
+              <label class="poll__option">
+                <input type="radio" class="poll__radio" name="q11" value="no" />
+                <span class="poll__radio-custom"></span>
+                <span class="poll__option-text">Ні</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Q12 -->
+          <div class="poll__step" data-step="12">
+            <span class="poll__subtitle">Запитання №12</span>
+            <h2 class="poll__question">Чи є у вас особливі потреби або обмеження, які нам варто врахувати?</h2>
+            <textarea id="q12" class="poll__textarea" placeholder="Якщо так — розпишіть детальніше"></textarea>
+          </div>
+
+          <!-- Navigation — shared for all steps -->
+          <div class="poll__btn-list">
+            <button class="poll__btn poll__btn--back">Назад</button>
+            <button class="poll__btn poll__btn--next">Далі</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/main.min.js"></script>
+  </body>
+</html>

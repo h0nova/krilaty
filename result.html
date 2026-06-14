@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <title>Результати</title>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <div class="hobby__page">
+      <div class="container" style="min-height: auto; padding: 40px 0 10px ;">
+        <header class="header" style="margin-bottom: 0">
+          <a href="index.html" class="logo">
+            <img src="images/logo.png" alt="Логотип" class="logo__img" />
+          </a>
+          <button class="header__btn">
+            <span class="header__btn-span"></span
+            ><span class="header__btn-span"></span
+            ><span class="header__btn-span"></span>
+          </button>
+          <ul class="menu">
+            <li class="menu__item">
+              <a href="./index.html#home" class="menu__link">Головна</a>
+            </li>
+            <li class="menu__item">
+              <a href="./profile.html" class="menu__link">Моя сторінка</a>
+            </li>
+            <li class="menu__item">
+              <a href="./index.html#about" class="menu__link">Про нас</a>
+            </li>
+            <li class="menu__item">
+              <a href="./index.html#activity" class="menu__link">Заходи</a>
+            </li>
+            <li class="menu__item">
+              <a href="./index.html#news" class="menu__link">Новини</a>
+            </li>
+          </ul>
+        </header>
+      </div>
+    </div>
+
+    <!-- Result content -->
+    <div class="container" style="min-height: auto; height: auto; padding: 0;">
+      <div class="result-page">
+
+        <!-- Hero -->
+        <div class="result-page__hero">
+          <p class="result-page__greeting">
+            <span class="result-page__name"></span> ви є
+          </p>
+          <div class="result-page__badge"></div>
+          <p class="result-page__desc"></p>
+        </div>
+
+        <!-- Charts -->
+        <div class="result-page__charts">
+
+          <div class="result-page__chart-wrap">
+            <svg viewBox="0 0 100 100" class="result-page__chart-svg">
+              <circle cx="50" cy="50" r="40"
+                class="result-page__chart-bg" />
+              <circle cx="50" cy="50" r="40"
+                class="result-page__chart-fill result-page__chart-fill--green chart-social"
+                transform="rotate(-90 50 50)" />
+              <text x="50" y="51"
+                class="result-page__chart-pct result-page__chart-pct--green">0%</text>
+            </svg>
+            <span class="result-page__chart-label">Соціальна активність</span>
+          </div>
+
+          <div class="result-page__chart-wrap">
+            <svg viewBox="0 0 100 100" class="result-page__chart-svg">
+              <circle cx="50" cy="50" r="40"
+                class="result-page__chart-bg" />
+              <circle cx="50" cy="50" r="40"
+                class="result-page__chart-fill result-page__chart-fill--blue chart-physical"
+                transform="rotate(-90 50 50)" />
+              <text x="50" y="51"
+                class="result-page__chart-pct result-page__chart-pct--blue">0%</text>
+            </svg>
+            <span class="result-page__chart-label">Фізична готовність</span>
+          </div>
+
+          <div class="result-page__chart-wrap">
+            <svg viewBox="0 0 100 100" class="result-page__chart-svg">
+              <circle cx="50" cy="50" r="40"
+                class="result-page__chart-bg" />
+              <circle cx="50" cy="50" r="40"
+                class="result-page__chart-fill result-page__chart-fill--lime chart-comfort"
+                transform="rotate(-90 50 50)" />
+              <text x="50" y="51"
+                class="result-page__chart-pct result-page__chart-pct--lime">0%</text>
+            </svg>
+            <span class="result-page__chart-label">Психол. комфорт</span>
+          </div>
+
+        </div>
+
+        <!-- Advice -->
+        <div class="result-page__advice">
+          <h3 class="result-page__advice-title">Рекомендації для вас</h3>
+          <ul class="result-page__advice-list"></ul>
+        </div>
+
+        <!-- Quote -->
+        <div class="result-page__quote">
+          <span class="result-page__quote-text"></span>
+          <span class="result-page__quote-author"></span>
+        </div>
+
+      </div>
+    </div>
+
+    <script src="./js/main.min.js"></script>
+  </body>
+</html>
